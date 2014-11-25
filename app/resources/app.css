@@ -1,0 +1,84 @@
+/* @import url("../../esri/css/esri.css");
+@import url("../../bootstrap-map-js/src/css/bootstrapmap.css"); */
+
+body {
+  padding-top: 50px;
+}
+
+body > .container {
+  padding-bottom: 20px;
+}
+
+table {
+  border-collapse: ;
+  border-spacing: ;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.locate-button {
+  position: absolute;
+  top: 162px;
+  left: 16px;
+  z-index: 50;
+}
+
+.geocoder {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 65px;
+  right: 15px;
+}
+
+.HomeButton {
+  position: absolute;
+  top: 130px;
+  left: 16px;
+  z-index: 50;
+}
+.panel {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  z-index: 50;
+}
+.loading-indicator {
+    /* Loading status */
+    display: none;
+    height: 100%;
+    width: 100%;
+    z-index: 500;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: #fff;
+}
+.app-loading .loading-indicator,
+.app-error .loading-indicator {
+    /* Show this class when loading or error */
+    display: block;
+}
+.app-loading .loading-indicator {
+    /* Loading image */
+    background-position: center center;
+    background-image: url(../images/ajax-loader.gif);
+    background-repeat: no-repeat;
+}
+.app-error .loading-message {
+    /* Error status */
+    background-position: top center;
+    background-image: url(../images/error.png);
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 0;
+    text-align: center;
+}
